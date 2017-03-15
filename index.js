@@ -19,6 +19,11 @@ suite
     let tmp = arr[i];
   }
 })
+.add('es6-loop', () => {
+	for (const elem of arr) {
+    let tmp = elem;
+  }
+})
 .on('cycle', function(event) {
   console.log(String(event.target));
 })
